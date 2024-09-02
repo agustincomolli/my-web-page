@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="./styles/bootstrap-icons.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
   <header>
@@ -28,7 +30,7 @@
               <a href="./index.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Tecnologías</a>
+              <a href="#" class="nav-link active" aria-current="page">Habilidades</a>
             </li>
             <li class="nav-item">
               <a href="./projects.html" class="nav-link">Proyectos</a>
@@ -46,13 +48,73 @@
       </div>
     </nav>
   </header>
-  
+
   <main>
     <div class="container flex-grow-1 my-3 text-center">
-      <h2>Tecnologías</h2>
+      <!-- Sección de habilidades técnicas -->
+      <section>
+        <h2 class="mt-5 mb-4">Mis Habilidades Técnicas</h2>
+        <p>Estas son algunas de las habilidades técnicas que he estado aprediendo:</p>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 mx-auto">
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/terminal.webp" alt="Linux Terminal" class="img-fluid mb-2" loading="lazy">
+              <p>Linux Terminal</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/git.webp" alt="Git" class="img-fluid mb-2" loading="lazy">
+              <p>Git</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/github.webp" alt="GitHub" class="img-fluid mb-2" loading="lazy">
+              <p>GitHub</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/html.webp" alt="HTML" class="img-fluid mb-2" loading="lazy">
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/css.webp" alt="CSS" class="img-fluid mb-2" loading="lazy">
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/js.webp" alt="JavaScript" class="img-fluid mb-2" loading="lazy">
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/python.webp" alt="Python" class="img-fluid mb-2" loading="lazy">
+              <p>Python</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/boostrap.webp" alt="Bootstrap" class="img-fluid mb-2" loading="lazy">
+              <p>Bootstrap</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-item text-center p-3 rounded">
+              <img src="./assets/images/flask.webp" alt="Flask" class="img-fluid mb-2 dark-theme-img" loading="lazy">
+              <p>Flask</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
-  
+
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 ms-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -75,7 +137,7 @@
       <li class="ms-3">
         <a class="text-body-secondary" href="https://wa.me/+5492226680056" title="WhatsApp">
           <i class="bi bi-whatsapp"></i>
-      </a>
+        </a>
       </li>
     </ul>
   </footer>
