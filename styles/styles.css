@@ -50,3 +50,7 @@
 [data-bs-theme="light"] .dark-theme-img {
   filter: invert(0);
 }
+
+.services {
+  max-width: 200px;
+}

@@ -52,22 +52,24 @@
   <main>
     <section class="container flex-grow-1 my-3 text-center">
       <h2 class="mb-4">Contacto</h2>
+      <p class="mb-5">Completá el formulario a continuación y me pondré en contacto lo antes posible.</p>
       <div class="row d-flex justify-content-center">
         <form id="contact-form" class="col-6 mx-3" action="https://formspree.io/f/xrgnwwed" method="POST">
-          <div class="row mb-3">
-            <input type="text" class="form-control" id="name" name="name" required placeholder="Nombre"
+          <div class="row mb-4">
+            <input type="text" class="form-control" id="name" name="name" required placeholder="Tu nombre completo"
               aria-label="Nombre">
           </div>
-          <div class="row mb-3">
-            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+          <div class="row mb-4">
+            <input type="email" class="form-control" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
           </div>
-          <div class="row mb-3">
-            <textarea class="form-control" id="comments" name="comments" rows="6"></textarea>
+          <div class="row mb-4">
+            <textarea class="form-control" id="comments" name="comments" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
           </div>
-          <div class="row mb-3 text-end">
-            <button type="submit" class="btn btn-secondary px-5">Enviar</button>
-          </div>
-        </form>
+          <div class="row mb-4">
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-secondary">Enviar mensaje</button>
+            </div>
+        </div>        </form>
         <div class="modal fade" id="alert-modal" tabindex="-1" aria-labelledby="alert-title" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -114,7 +116,7 @@
       </li>
     </ul>
   </footer>
-  <script src="./scripts/bootstrap.js"></script>
+  <script src="./scripts/bootstrap.bundle.js"></script>
   <script src="./scripts/change-theme.js"></script>
   <script src="./scripts/send-form.js"></script>
 </body>

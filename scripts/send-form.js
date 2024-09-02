@@ -41,7 +41,7 @@ async function submitForm(event) {
         // Restablecer el formulario después de un envío exitoso.
         form.reset();
         alertTitle = "Su mensaje ha sido enviado exitosamente";
-        alertMessage = "¡Gracias por contactarte con nosotros 😀!<br> Pronto nos comunicaremos con usted.";
+        alertMessage = "¡Gracias por contactarte conmigo 😀!<br> Pronto nos comunicaremos.";
     } else {
         alertTitle = "Su mensaje no pudo enviarse";
         alertMessage = "¡Ups! Hubo un problema al enviar su formulario 😥";
