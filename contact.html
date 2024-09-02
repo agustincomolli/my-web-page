@@ -48,13 +48,46 @@
       </div>
     </nav>
   </header>
-  
+
   <main>
-    <div class="container flex-grow-1 my-3 text-center">
-      <h2>Contacto</h2>
-    </div>
+    <section class="container flex-grow-1 my-3 text-center">
+      <h2 class="mb-4">Contacto</h2>
+      <div class="row d-flex justify-content-center">
+        <form id="contact-form" class="col-6 mx-3" action="https://formspree.io/f/xrgnwwed" method="POST">
+          <div class="row mb-3">
+            <input type="text" class="form-control" id="name" name="name" required placeholder="Nombre"
+              aria-label="Nombre">
+          </div>
+          <div class="row mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+          </div>
+          <div class="row mb-3">
+            <textarea class="form-control" id="comments" name="comments" rows="6"></textarea>
+          </div>
+          <div class="row mb-3 text-end">
+            <button type="submit" class="btn btn-secondary px-5">Enviar</button>
+          </div>
+        </form>
+        <div class="modal fade" id="alert-modal" tabindex="-1" aria-labelledby="alert-title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="alert-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center" id="alert-message">Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  
+
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 ms-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -77,11 +110,12 @@
       <li class="ms-3">
         <a class="text-body-secondary" href="https://wa.me/+5492226680056" title="WhatsApp">
           <i class="bi bi-whatsapp"></i>
-      </a>
+        </a>
       </li>
     </ul>
   </footer>
   <script src="./scripts/bootstrap.js"></script>
   <script src="./scripts/change-theme.js"></script>
+  <script src="./scripts/send-form.js"></script>
 </body>
 </html>
