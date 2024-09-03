@@ -51,6 +51,6 @@
   filter: invert(0);
 }
 
-.services {
-  max-width: 200px;
+.service-card {
+  width: 18rem;
 }

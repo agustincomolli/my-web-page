@@ -52,90 +52,106 @@
   <main>
     <section class="container flex-grow-1 my-3 text-center">
       <h2 class="mb-5">Bienvenido a mi página web</h2>
-      <div class="row gx-5">
-        <div class="col text-start">
+      <div class="row gx-5 d-flex mb-4 mt-2">
+        <div class="col-5 align-self-center text-end">
+          <img src="./assets/images/agustincomolli.png" alt="Agustín Comolli"
+            class="img rounded-circle p-2 border border-3" loading="lazy" height="300px">
+        </div>
+        <div class="col-6 text-start">
           <p class="fs-4">
             Soy Agustín Comolli, un profesional con 24 años de experiencia en soporte IT. Me especializo en brindar
-            soluciones tecnológicas efectivas y personalizadas para satisfacer las necesidades de mis clientes. A
-            continuación, te presento los servicios que ofrezco:
+            soluciones tecnológicas efectivas y personalizadas para satisfacer las necesidades de mis clientes.
+          </p>
+          <p class="fs-4">
+            Algunos de los servicios que ofrezco son:
           </p>
         </div>
-        <div class="col ms-3">
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/specialized-services.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Servicios Especializados</h5>
-              <ul>
-                <li>Instalación y configuración de servidores.</li>
-                <li>Seguridad informática y protección contra virus.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/consulting-and technical-assistance.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Consultoría y Asesoría Técnica</h5>
-              <ul>
-                <li>Evaluación de necesidades tecnológicas.</li>
-                <li>Recomendaciones de actualización de hardware y software.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/remote-tech-support.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Soporte Técnico Remoto</h5>
-              <ul>
-                <li>Asistencia remota para resolver problemas de software.</li>
-                <li>Instalación y configuración de programas.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/networking-and-connectivity-services.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Servicios de Redes y Conectividad</h5>
-              <ul>
-                <li>Configuración de redes domésticas.</li>
-                <li>Configuración de redes empresariales.</li>
-                <li>Solución de problemas de conectividad (WiFi, LAN, etc...).</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/preventative-maintenance-services.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Servicios de Mantenimiento Preventivo</h5>
-              <ul>
-                <li>Limpieza interna de equipos.</li>
-                <li>Optimización de sistemas operativos.</li>
-                <li>Actualización de software y controladores.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="./assets/images/hardware-repair-service.webp" alt="Imagen de Servicios Especializados" class="services img-fluid rounded" loading="lazy">
-            </div>
-            <div class="col text-start">
-              <h5>Servicio de Reparación de Hardware</h5>
-              <ul>
-                <li>Reparación de computadoras de escritorio.</li>
-                <li>Reparación de laptops y notebooks.</li>
-              </ul>
+      </div>
+    </section>
+    <section class="container">
+      <div class="accordion accordion-flush my-4" id="accordionService">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Servicios Especializados
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Instalación y configuración de servidores.</p>
+              <p>Seguridad informática y protección contra virus.</p>
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Consultoría y Asesoría Técnica
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Evaluación de necesidades tecnológicas.</p>
+              <p>Recomendaciones de actualización de hardware y software.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Soporte Técnico Remoto
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Asistencia remota para resolver problemas de software.</p>
+              <p>Instalación y configuración de programas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Servicios de Redes y Conectividad
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Configuración de redes domésticas.</p>
+              <p>Configuración de redes empresariales.</p>
+              <p>Solución de problemas de conectividad (WiFi, LAN, etc...).</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Servicios de Mantenimiento Preventivo
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Limpieza interna de equipos.</p>
+              <p>Optimización de sistemas operativos.</p>
+              <p>Actualización de software y controladores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Servicio de Reparación de Hardware
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Reparación de computadoras de escritorio.</p>
+              <p>Reparación de laptops y notebooks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
 
